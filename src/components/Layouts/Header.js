@@ -1,10 +1,15 @@
 import React from "react";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
 
 function Header() {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography color="inherit" variant="headline">
+          Display 4
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 
