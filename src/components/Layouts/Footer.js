@@ -20,8 +20,8 @@ function Footer({ muscles, category, onSelect }) {
         centered
       >
         <Tab label="All" />
-        {muscles.map(m => (
-          <Tab label={m} />
+        {muscles.map(group => (
+          <Tab key={group} label={group} />
         ))}
       </Tabs>
     </Paper>
